@@ -39,6 +39,7 @@ function EditProfileHeadingsTouchAble({text, svg, lastItem, onPress}) {
         flexDirection: 'row',
         alignItems: 'center',
         borderBottomColor: '#DBDBDB',
+        height: 45,
         borderBottomWidth: lastItem ? 0 : 1,
       }}>
       <View
@@ -238,41 +239,6 @@ export default class ProfileScreen extends Component {
               elevation: 5,
               marginBottom: 50,
             }}>
-            <EditProfileHeadingsTouchAble
-              onPress={() => {
-                navigation.navigate('PaymentOptions');
-              }}
-              text={'Payment Options'}
-              svg={
-                <Svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width={21.274}
-                  height={21.242}
-                  viewBox="0 0 31.274 31.242">
-                  <G data-name="Group 365">
-                    <G data-name="Group 364" fill="#23262b">
-                      <Path
-                        data-name="Path 1402"
-                        d="M31.056 11.219l-3.494-9.085a3.333 3.333 0 00-4.308-1.91l-.075.033L5.718 7.491a3.317 3.317 0 00-1.843 4.244l.48 1.281h-1.1A3.258 3.258 0 000 16.272v11.716a3.258 3.258 0 003.254 3.254h22.13a3.258 3.258 0 003.254-3.254V16.272a3.2 3.2 0 00-.047-.527l.6-.245a3.345 3.345 0 001.865-4.281zM3.254 14.057h22.13a2.21 2.21 0 012.2 2.083H1.054a2.21 2.21 0 012.2-2.083zm5.234-3.137l3.48-1.741.715 1.79L9.2 12.711zM27.6 27.988a2.216 2.216 0 01-2.213 2.213H3.254a2.216 2.216 0 01-2.213-2.213v-6.639H27.6zm0-7.681H1.041v-3.124H27.6zm1.209-5.77l-.544.22a3.256 3.256 0 00-2.877-1.741H10.92l2.658-1.329a.521.521 0 00.251-.659l-1.1-2.76a.521.521 0 00-.677-.29l-.04.018-4.418 2.209a.521.521 0 00-.25.659l.856 2.153H5.467l-.617-1.644a2.28 2.28 0 011.267-2.916l17.46-7.238a2.288 2.288 0 012.99 1.238l.022.055 3.494 9.084a2.3 2.3 0 01-1.277 2.942z"
-                      />
-                      <Path
-                        data-name="Path 1403"
-                        d="M18.731 28.736a3.125 3.125 0 003.139 0 3.124 3.124 0 100-5.4 3.124 3.124 0 10-3.139 5.4zm4.01-4.657a2.061 2.061 0 01.691-.127 2.083 2.083 0 11-.691 4.039 3.112 3.112 0 00-.001-3.91zm-.871.593a2.045 2.045 0 010 2.726 2.045 2.045 0 010-2.726zm-1.562-.72a2.06 2.06 0 01.692.127 3.112 3.112 0 000 3.912 2.079 2.079 0 11-.692-4.039z"
-                      />
-                      <Path
-                        data-name="Rectangle 1598"
-                        d="M22.388 11.698l-.423-.951 4.967-2.208.423.95z"
-                      />
-                      <Path
-                        data-name="Rectangle 1599"
-                        d="M18.649 9.645l7.175-3.31.436.944-7.175 3.311z"
-                      />
-                    </G>
-                  </G>
-                </Svg>
-              }
-            />
-
             <EditProfileHeadingsTouchAble
               text={'Change Password'}
               lastItem={true}

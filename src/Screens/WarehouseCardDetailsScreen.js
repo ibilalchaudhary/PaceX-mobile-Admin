@@ -60,6 +60,78 @@ function CategoriesShowCase({text}) {
   );
 }
 
+function EditAbleLine({heading}) {
+  return (
+    <View
+      style={{
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+      }}>
+      <Text
+        style={{
+          fontSize: 14,
+          color: PRIMARY,
+          marginTop: 8,
+        }}>
+        {heading}
+      </Text>
+      <TouchableOpacity
+        style={{
+          display: 'flex',
+          flexDirection: 'row',
+          alignItems: 'center',
+        }}>
+        <Svg xmlns="http://www.w3.org/2000/svg" width={18.447} height={18.354}>
+          <Path
+            data-name="Path 1393"
+            d="M17.026 11.516a.459.459 0 00-.459.459v4.079a1.38 1.38 0 01-1.378 1.378H2.3a1.38 1.38 0 01-1.381-1.375V4.085A1.38 1.38 0 012.3 2.707h4.076a.46.46 0 100-.919H2.3a2.3 2.3 0 00-2.3 2.3v11.969a2.3 2.3 0 002.3 2.3h12.888a2.3 2.3 0 002.3-2.3v-4.079a.459.459 0 00-.462-.462zm0 0"
+            fill="#4571b0"
+          />
+          <Path
+            data-name="Path 1394"
+            d="M17.303.605a2.067 2.067 0 00-2.924 0l-8.2 8.2a.459.459 0 00-.118.2l-1.078 3.891a.459.459 0 00.565.565l3.891-1.078a.459.459 0 00.2-.118l8.2-8.2a2.07 2.07 0 000-2.924zM7.18 9.1l6.708-6.708 2.163 2.163-6.708 6.708zm-.432.867l1.728 1.729-2.391.662zm10.444-6.548l-.487.487-2.164-2.167.487-.487a1.148 1.148 0 011.624 0l.539.539a1.15 1.15 0 01.001 1.628zm0 0"
+            fill="#4571b0"
+          />
+        </Svg>
+      </TouchableOpacity>
+    </View>
+  );
+}
+
+function EditAbleLineBold({heading}) {
+  return (
+    <View
+      style={{
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        marginVertical: 6,
+        alignItems: 'center',
+      }}>
+      <Text style={{fontSize: 16, fontWeight: 'bold'}}>{heading}</Text>
+      <TouchableOpacity
+        style={{
+          display: 'flex',
+          flexDirection: 'row',
+          alignItems: 'center',
+        }}>
+        <Svg xmlns="http://www.w3.org/2000/svg" width={18.447} height={18.354}>
+          <Path
+            data-name="Path 1393"
+            d="M17.026 11.516a.459.459 0 00-.459.459v4.079a1.38 1.38 0 01-1.378 1.378H2.3a1.38 1.38 0 01-1.381-1.375V4.085A1.38 1.38 0 012.3 2.707h4.076a.46.46 0 100-.919H2.3a2.3 2.3 0 00-2.3 2.3v11.969a2.3 2.3 0 002.3 2.3h12.888a2.3 2.3 0 002.3-2.3v-4.079a.459.459 0 00-.462-.462zm0 0"
+            fill="#4571b0"
+          />
+          <Path
+            data-name="Path 1394"
+            d="M17.303.605a2.067 2.067 0 00-2.924 0l-8.2 8.2a.459.459 0 00-.118.2l-1.078 3.891a.459.459 0 00.565.565l3.891-1.078a.459.459 0 00.2-.118l8.2-8.2a2.07 2.07 0 000-2.924zM7.18 9.1l6.708-6.708 2.163 2.163-6.708 6.708zm-.432.867l1.728 1.729-2.391.662zm10.444-6.548l-.487.487-2.164-2.167.487-.487a1.148 1.148 0 011.624 0l.539.539a1.15 1.15 0 01.001 1.628zm0 0"
+            fill="#4571b0"
+          />
+        </Svg>
+      </TouchableOpacity>
+    </View>
+  );
+}
 export default class WarehouseCardDetailsScreen extends Component {
   constructor(props) {
     super(props);
@@ -88,39 +160,35 @@ export default class WarehouseCardDetailsScreen extends Component {
         <ScrollView style={{flex: 1, paddingHorizontal: 20}}>
           <View style={{flex: 1, paddingBottom: 50}}>
             <WarehouseMainCard />
-            <View
+            <TouchableOpacity
               style={{
-                display: 'flex',
-                flexDirection: 'row',
-                justifyContent: 'space-between',
-                marginVertical: 6,
+                position: 'absolute',
+                top: 0,
+                right: 0,
+                backgroundColor: WHITE,
+                width: 30,
+                height: 30,
+                borderBottomLeftRadius: 18,
+                justifyContent: 'center',
                 alignItems: 'center',
               }}>
-              <Text style={{fontSize: 16, fontWeight: 'bold'}}>
-                Discription
-              </Text>
-              <View
-                style={{
-                  display: 'flex',
-                  flexDirection: 'row',
-                  alignItems: 'center',
-                }}>
-                <Svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width={11.93}
-                  height={11.078}
-                  viewBox="0 0 11.93 11.078">
-                  <Path
-                    data-name="Icon ionic-ios-star"
-                    d="M11.477 3.835H7.56L6.37.282a.431.431 0 00-.81 0L4.37 3.835H.426A.427.427 0 000 4.261a.313.313 0 00.008.072.409.409 0 00.178.3l3.219 2.269-1.235 3.593a.427.427 0 00.146.479.412.412 0 00.24.1.522.522 0 00.266-.1l3.142-2.24 3.142 2.24a.5.5 0 00.266.1.383.383 0 00.237-.1.422.422 0 00.146-.479L8.519 6.903l3.193-2.29.077-.067a.407.407 0 00-.314-.711z"
-                    fill="#f80"
-                  />
-                </Svg>
-                <Text style={{marginLeft: 6, fontSize: 14, color: '#f80'}}>
-                  4.6
-                </Text>
-              </View>
-            </View>
+              <Svg
+                xmlns="http://www.w3.org/2000/svg"
+                width={18.447}
+                height={18.354}>
+                <Path
+                  data-name="Path 1393"
+                  d="M17.026 11.516a.459.459 0 00-.459.459v4.079a1.38 1.38 0 01-1.378 1.378H2.3a1.38 1.38 0 01-1.381-1.375V4.085A1.38 1.38 0 012.3 2.707h4.076a.46.46 0 100-.919H2.3a2.3 2.3 0 00-2.3 2.3v11.969a2.3 2.3 0 002.3 2.3h12.888a2.3 2.3 0 002.3-2.3v-4.079a.459.459 0 00-.462-.462zm0 0"
+                  fill="#4571b0"
+                />
+                <Path
+                  data-name="Path 1394"
+                  d="M17.303.605a2.067 2.067 0 00-2.924 0l-8.2 8.2a.459.459 0 00-.118.2l-1.078 3.891a.459.459 0 00.565.565l3.891-1.078a.459.459 0 00.2-.118l8.2-8.2a2.07 2.07 0 000-2.924zM7.18 9.1l6.708-6.708 2.163 2.163-6.708 6.708zm-.432.867l1.728 1.729-2.391.662zm10.444-6.548l-.487.487-2.164-2.167.487-.487a1.148 1.148 0 011.624 0l.539.539a1.15 1.15 0 01.001 1.628zm0 0"
+                  fill="#4571b0"
+                />
+              </Svg>
+            </TouchableOpacity>
+            <EditAbleLineBold heading="Discription" />
             <Text style={{fontSize: 12, color: SECONDARY}}>
               Lorem ipsum, in graphical and textual context, refers to filler
               text that is placed.Lorem ipsum, in graphical and textual context.
@@ -137,14 +205,7 @@ export default class WarehouseCardDetailsScreen extends Component {
               <Text style={{color: PRIMARY, fontSize: 12}}>See more</Text>
             </TouchableOpacity>
 
-            <Text
-              style={{
-                fontSize: 14,
-                color: PRIMARY,
-                marginTop: 8,
-              }}>
-              Owner
-            </Text>
+            <EditAbleLine heading="Owner" />
             <TouchableOpacity
               style={{
                 display: 'flex',
@@ -196,14 +257,7 @@ export default class WarehouseCardDetailsScreen extends Component {
                 </View>
               </View>
             </TouchableOpacity>
-            <Text
-              style={{
-                fontSize: 14,
-                color: PRIMARY,
-                marginTop: 8,
-              }}>
-              Representative
-            </Text>
+            <EditAbleLine heading="Representative" />
             <TouchableOpacity
               onPress={() => {
                 navigation.navigate('RepresentativeProfile');
@@ -267,15 +321,7 @@ export default class WarehouseCardDetailsScreen extends Component {
                 </Svg>
               </TouchableOpacity>
             </TouchableOpacity>
-            <Text
-              style={{
-                fontSize: 16,
-                color: TEXT_COLOR,
-                marginTop: 8,
-                fontWeight: 'bold',
-              }}>
-              Gallery
-            </Text>
+            <EditAbleLineBold heading="Gallery" />
             <View>
               <ImageZoom
                 cropWidth="100%"
@@ -334,16 +380,7 @@ export default class WarehouseCardDetailsScreen extends Component {
                   />
                 </TouchableOpacity>
               </ScrollView>
-              <Text
-                style={{
-                  fontSize: 16,
-                  color: TEXT_COLOR,
-                  marginTop: 8,
-                  fontWeight: 'bold',
-                  marginTop: 12,
-                }}>
-                Area
-              </Text>
+              <EditAbleLineBold heading="Area" />
               <View
                 style={{
                   display: 'flex',
@@ -382,16 +419,7 @@ export default class WarehouseCardDetailsScreen extends Component {
                 <Text style={{fontWeight: 'bold'}}>Minimum Space Required</Text>
                 <Text style={{color: PRIMARY}}>9ft</Text>
               </View>
-              <Text
-                style={{
-                  fontSize: 16,
-                  color: TEXT_COLOR,
-                  marginTop: 8,
-                  fontWeight: 'bold',
-                  marginTop: 12,
-                }}>
-                Categories
-              </Text>
+              <EditAbleLineBold heading="Categories" />
               <View style={{display: 'flex', flexDirection: 'row'}}>
                 <CategoriesShowCase text="Food" />
                 <CategoriesShowCase text="Food" />
@@ -471,7 +499,7 @@ export default class WarehouseCardDetailsScreen extends Component {
           </View>
           <TouchableOpacity
             onPress={() => {
-              navigation.navigate('Booking');
+              navigation.navigate('Warehouses');
             }}
             style={{
               display: 'flex',
@@ -483,7 +511,7 @@ export default class WarehouseCardDetailsScreen extends Component {
               borderRadius: 8,
               backgroundColor: WHITE,
             }}>
-            <Text style={{color: '#777777', fontSize: 12}}>Book Now</Text>
+            <Text style={{color: '#777777', fontSize: 12}}>Confirm</Text>
           </TouchableOpacity>
         </View>
       </View>

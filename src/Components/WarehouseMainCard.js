@@ -10,6 +10,7 @@ import {
 } from '../Constants/Colors';
 import {View, Text, Image} from 'react-native';
 import Svg, {G, Path} from 'react-native-svg';
+import {TouchableOpacity} from 'react-native-gesture-handler';
 
 export default function WarehouseMainCard() {
   return (
@@ -17,11 +18,14 @@ export default function WarehouseMainCard() {
       style={{
         position: 'relative',
         marginBottom: 12,
+        width: '100%',
+        height: 270,
       }}>
       <Image
         source={require('../Assets/warehouse__main__bg.png')}
-        style={{borderRadius: 18, width: '100%', height: 260}}
+        style={{borderRadius: 18, width: '100%', height: '100%'}}
       />
+
       <View
         style={{
           position: 'absolute',

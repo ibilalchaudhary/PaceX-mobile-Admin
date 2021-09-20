@@ -74,18 +74,6 @@ export default class DashboardScreen extends Component {
               </Svg>
             </TouchableOpacity>
           </View>
-          {/* <ScrollView
-            horizontal={true}
-            showsHorizontalScrollIndicator={false}
-            style={{
-              marginVertical: 22,
-              display: 'flex',
-              flexDirection: 'row',
-            }}>
-            {catagrories.map(item => {
-              return <Selector key={item} text={item} />;
-            })}
-          </ScrollView> */}
         </View>
         <ScrollView style={{flex: 1, paddingHorizontal: 20}}>
           <View

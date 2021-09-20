@@ -1,6 +1,12 @@
 import React, {useState} from 'react';
 import {View, Text, TouchableOpacity} from 'react-native';
-import {DISABLE, INPUT_BG, PRIMARY, WHITE} from '../Constants/Colors';
+import {
+  DISABLE,
+  INPUT_BG,
+  PRIMARY,
+  TEXT_COLOR,
+  WHITE,
+} from '../Constants/Colors';
 
 export default function Selector({text}) {
   const [select, setSelect] = useState(false);
@@ -14,16 +20,19 @@ export default function Selector({text}) {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          width: 75,
-          height: 35,
-          borderRadius: 8,
-          backgroundColor: select ? PRIMARY : INPUT_BG,
+          width: 65,
+          height: 42,
+          borderRadius: 6,
+          borderWidth: 1,
+          borderColor: PRIMARY,
+          backgroundColor: select ? PRIMARY : WHITE,
+          marginRight: 16,
+          marginVertical: 6,
         }}>
-        <Text style={{fontSize: 12, color: select ? WHITE : DISABLE}}>
+        <Text style={{fontSize: 12, color: select ? WHITE : TEXT_COLOR}}>
           {text}
         </Text>
       </TouchableOpacity>
-      <View style={{marginRight: 8}}></View>
     </>
   );
 }

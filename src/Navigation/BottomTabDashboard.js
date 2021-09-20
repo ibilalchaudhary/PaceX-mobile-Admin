@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import {View} from 'react-native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import AdvanceBookingScreen from '../Screens/AdvanceBookingScreen';
 import DashboardScreen from '../Screens/DashboardScreen';
 import ProfileScreen from '../Screens/ProfileScreen';
 import Svg, {Path, G} from 'react-native-svg';

@@ -153,7 +153,7 @@ export default class WarehouseCardDetailsScreen extends Component {
         <Header
           heading="Creatv Hub"
           onPress={() => {
-            navigation.navigate('Filters');
+            navigation.navigate('Warehouses');
           }}
         />
 
@@ -511,7 +511,7 @@ export default class WarehouseCardDetailsScreen extends Component {
               borderRadius: 8,
               backgroundColor: WHITE,
             }}>
-            <Text style={{color: '#777777', fontSize: 12}}>Confirm</Text>
+            <Text style={{color: '#777777', fontSize: 12}}>Book Now</Text>
           </TouchableOpacity>
         </View>
       </View>

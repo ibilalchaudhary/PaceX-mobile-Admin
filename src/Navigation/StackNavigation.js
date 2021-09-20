@@ -35,6 +35,7 @@ import RepresentativesScreen from '../Screens/RepresentativesScreen';
 import ManageRepresentativeScreen from '../Screens/ManageRepresentativeScreen';
 import AddRepresentativeScreen from '../Screens/AddRepresentativeScreen';
 import AddWarehouseScreen from '../Screens/AddWarehouseScreen';
+import AddWarehouseMoreInfo from '../Screens/AddWarehouseMoreInfo';
 
 const Stack = createNativeStackNavigator();
 
@@ -42,7 +43,7 @@ export default function StackNavigation() {
   return (
     <Stack.Navigator
       screenOptions={{header: () => null}}
-      initialRouteName="Onboarding">
+      initialRouteName="AddWarehouse">
       <Stack.Screen name="Onboarding" component={OnboardingNavigation} />
       <Stack.Screen name="Signup" component={SignupScreen} />
       <Stack.Screen name="Information" component={SignInformationScreen} />
@@ -89,6 +90,7 @@ export default function StackNavigation() {
         component={ManageRepresentativeScreen}
       />
       <Stack.Screen name="AddWarehouse" component={AddWarehouseScreen} />
+      <Stack.Screen name="AddWarehouseMoreInfo" component={AddWarehouseMoreInfo} />
     </Stack.Navigator>
   );
 }

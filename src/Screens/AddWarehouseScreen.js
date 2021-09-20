@@ -12,7 +12,7 @@ import {
 import Headings from '../Components/Headings';
 import {DARK, DISABLE, PRIMARY, TEXT_COLOR, WHITE} from '../Constants/Colors';
 import {height, width} from '../Constants/Dimensions';
-import Svg, {G, Path} from 'react-native-svg';
+import Svg, {G, Path, Text as TextSvg} from 'react-native-svg';
 import Header from '../Components/Header';
 import CardDetails from '../Components/CardDetails';
 import RepresentativeCard from '../Components/RepresentativeCard';
@@ -37,256 +37,612 @@ export default class AddWarehouseScreen extends Component {
           <View style={{marginVertical: 20}}>
             <InputBox
               variant="primary"
-              placeholder="Email"
+              placeholder="Warehouse Name"
+              secureTextEntry={true}
               svg={
                 <Svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width={20.159}
-                  height={20.772}
-                  viewBox="0 0 19.159 12.772">
-                  <G data-name="Group 202">
-                    <Path
-                      data-name="Path 292"
-                      d="M18.176 0H.983A.985.985 0 000 .982V11.79a.985.985 0 00.983.983h17.193a.985.985 0 00.983-.983V.982A.985.985 0 0018.176 0zm-.369.737l-7.663 5.748a1.027 1.027 0 01-1.13 0L1.351.737zm-4.093 6.13l4.176 5.158.014.014H1.255l.014-.014 4.175-5.158a.369.369 0 00-.573-.464L.737 11.508V1.197l7.835 5.876a1.759 1.759 0 002.014 0l7.835-5.876v10.31l-4.135-5.108a.369.369 0 00-.573.464z"
-                      fill={PRIMARY}
-                    />
+                  width={12.292}
+                  height={12.717}>
+                  <G data-name="Group 3018">
+                    <G data-name="Group 3017">
+                      <Path
+                        data-name="Path 9259"
+                        d="M12.205 4.069L6.258.034a.2.2 0 00-.224 0L.087 4.069A.2.2 0 000 4.234v8.283a.2.2 0 00.2.2h11.893a.2.2 0 00.2-.2V4.234a.2.2 0 00-.088-.165zm-7.532 8.249h-2.15v-2.15h.451v1.075a.2.2 0 00.2.2h.85a.2.2 0 00.2-.2v-1.075h.451v2.15zM2.097 5.1v-.454h8.1V5.1zm1.274 5.947v-.876h.451v.876zm1.3-1.274H2.522V7.619h.451v1.076a.2.2 0 00.2.2h.85a.2.2 0 00.2-.2V7.619h.451zM3.372 8.5v-.881h.451V8.5zm3.85 3.823h-2.15v-2.15h.451v1.075a.2.2 0 00.2.2h.85a.2.2 0 00.2-.2v-1.08h.451v2.15zm-1.3-1.274v-.876h.451v.876zm5.974 1.274h-1.728V8.057a.2.2 0 00-.4 0v4.261h-2.15V9.969a.2.2 0 00-.2-.2h-2.35V7.42a.2.2 0 00-.2-.2h-2.35V5.5h7.248v1.708a.2.2 0 10.4 0V5.5h.226a.2.2 0 00.2-.2v-.85a.2.2 0 00-.2-.2h-8.5a.2.2 0 00-.2.2v.85a.2.2 0 00.2.2h.226v6.823H.398V4.34L6.149.439l5.748 3.9v7.979z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
+                  <G data-name="Group 3020">
+                    <G data-name="Group 3019">
+                      <Path
+                        data-name="Path 9260"
+                        d="M6.995 1.699h-1.7a.2.2 0 100 .4h1.7a.2.2 0 100-.4z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
+                  <G data-name="Group 3022">
+                    <G data-name="Group 3021">
+                      <Path
+                        data-name="Path 9261"
+                        d="M6.995 2.548h-1.7a.2.2 0 100 .4h1.7a.2.2 0 100-.4z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
+                  <G data-name="Group 3024">
+                    <G data-name="Group 3023">
+                      <Path
+                        data-name="Path 9262"
+                        d="M6.995 3.398h-1.7a.2.2 0 100 .4h1.7a.2.2 0 100-.4z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
+                  <G data-name="Group 3026">
+                    <G data-name="Group 3025">
+                      <Path
+                        data-name="Path 9263"
+                        d="M4.023 9.133h-.85a.2.2 0 000 .4h.85a.2.2 0 100-.4z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
+                  <G data-name="Group 3028">
+                    <G data-name="Group 3027">
+                      <Path
+                        data-name="Path 9264"
+                        d="M4.023 11.681h-.85a.2.2 0 000 .4h.85a.2.2 0 100-.4z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
+                  <G data-name="Group 3030">
+                    <G data-name="Group 3029">
+                      <Path
+                        data-name="Path 9265"
+                        d="M6.571 11.681h-.85a.2.2 0 100 .4h.85a.2.2 0 000-.4z"
+                        fill="#4571b0"
+                      />
+                    </G>
                   </G>
                 </Svg>
               }
             />
             <InputBox
               variant="primary"
-              placeholder="Password"
+              placeholder="Area"
               secureTextEntry={true}
               svg={
                 <Svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width={20.192}
-                  height={20.922}
-                  viewBox="0 0 11.192 14.922">
-                  <Path
-                    data-name="Path 293"
-                    d="M9.793 14.923H1.4a1.4 1.4 0 01-1.4-1.4V6.996a1.4 1.4 0 011.4-1.4h8.394a1.4 1.4 0 011.4 1.4v6.529a1.4 1.4 0 01-1.401 1.398zM1.4 6.529a.467.467 0 00-.466.466v6.529a.467.467 0 00.466.466h8.394a.467.467 0 00.466-.466V6.996a.467.467 0 00-.466-.466z"
-                    fill={PRIMARY}
-                  />
-                  <Path
-                    data-name="Path 294"
-                    d="M8.86 6.529a.466.466 0 01-.466-.466V3.731a2.8 2.8 0 10-5.6 0v2.331a.467.467 0 01-.933 0V3.731a3.731 3.731 0 117.461 0v2.331a.466.466 0 01-.462.467z"
-                    fill={PRIMARY}
-                  />
-                  <Path
-                    data-name="Path 295"
-                    d="M5.596 10.57A1.244 1.244 0 116.84 9.326a1.245 1.245 0 01-1.244 1.244zm0-1.554a.311.311 0 10.311.311.311.311 0 00-.311-.311z"
-                    fill={PRIMARY}
-                  />
-                  <Path
-                    data-name="Path 296"
-                    d="M5.596 12.436a.466.466 0 01-.466-.466v-1.71a.467.467 0 11.933 0v1.71a.466.466 0 01-.467.466z"
-                    fill={PRIMARY}
-                  />
+                  width={12.292}
+                  height={12.717}>
+                  <G data-name="Group 3018">
+                    <G data-name="Group 3017">
+                      <Path
+                        data-name="Path 9259"
+                        d="M12.205 4.069L6.258.034a.2.2 0 00-.224 0L.087 4.069A.2.2 0 000 4.234v8.283a.2.2 0 00.2.2h11.893a.2.2 0 00.2-.2V4.234a.2.2 0 00-.088-.165zm-7.532 8.249h-2.15v-2.15h.451v1.075a.2.2 0 00.2.2h.85a.2.2 0 00.2-.2v-1.075h.451v2.15zM2.097 5.1v-.454h8.1V5.1zm1.274 5.947v-.876h.451v.876zm1.3-1.274H2.522V7.619h.451v1.076a.2.2 0 00.2.2h.85a.2.2 0 00.2-.2V7.619h.451zM3.372 8.5v-.881h.451V8.5zm3.85 3.823h-2.15v-2.15h.451v1.075a.2.2 0 00.2.2h.85a.2.2 0 00.2-.2v-1.08h.451v2.15zm-1.3-1.274v-.876h.451v.876zm5.974 1.274h-1.728V8.057a.2.2 0 00-.4 0v4.261h-2.15V9.969a.2.2 0 00-.2-.2h-2.35V7.42a.2.2 0 00-.2-.2h-2.35V5.5h7.248v1.708a.2.2 0 10.4 0V5.5h.226a.2.2 0 00.2-.2v-.85a.2.2 0 00-.2-.2h-8.5a.2.2 0 00-.2.2v.85a.2.2 0 00.2.2h.226v6.823H.398V4.34L6.149.439l5.748 3.9v7.979z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
+                  <G data-name="Group 3020">
+                    <G data-name="Group 3019">
+                      <Path
+                        data-name="Path 9260"
+                        d="M6.995 1.699h-1.7a.2.2 0 100 .4h1.7a.2.2 0 100-.4z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
+                  <G data-name="Group 3022">
+                    <G data-name="Group 3021">
+                      <Path
+                        data-name="Path 9261"
+                        d="M6.995 2.548h-1.7a.2.2 0 100 .4h1.7a.2.2 0 100-.4z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
+                  <G data-name="Group 3024">
+                    <G data-name="Group 3023">
+                      <Path
+                        data-name="Path 9262"
+                        d="M6.995 3.398h-1.7a.2.2 0 100 .4h1.7a.2.2 0 100-.4z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
+                  <G data-name="Group 3026">
+                    <G data-name="Group 3025">
+                      <Path
+                        data-name="Path 9263"
+                        d="M4.023 9.133h-.85a.2.2 0 000 .4h.85a.2.2 0 100-.4z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
+                  <G data-name="Group 3028">
+                    <G data-name="Group 3027">
+                      <Path
+                        data-name="Path 9264"
+                        d="M4.023 11.681h-.85a.2.2 0 000 .4h.85a.2.2 0 100-.4z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
+                  <G data-name="Group 3030">
+                    <G data-name="Group 3029">
+                      <Path
+                        data-name="Path 9265"
+                        d="M6.571 11.681h-.85a.2.2 0 100 .4h.85a.2.2 0 000-.4z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
                 </Svg>
               }
             />
             <InputBox
               variant="primary"
-              placeholder="Confirm Password"
+              placeholder="Volume"
               secureTextEntry={true}
               svg={
                 <Svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width={20.192}
-                  height={20.922}
-                  viewBox="0 0 11.192 14.922">
-                  <Path
-                    data-name="Path 293"
-                    d="M9.793 14.923H1.4a1.4 1.4 0 01-1.4-1.4V6.996a1.4 1.4 0 011.4-1.4h8.394a1.4 1.4 0 011.4 1.4v6.529a1.4 1.4 0 01-1.401 1.398zM1.4 6.529a.467.467 0 00-.466.466v6.529a.467.467 0 00.466.466h8.394a.467.467 0 00.466-.466V6.996a.467.467 0 00-.466-.466z"
-                    fill={PRIMARY}
-                  />
-                  <Path
-                    data-name="Path 294"
-                    d="M8.86 6.529a.466.466 0 01-.466-.466V3.731a2.8 2.8 0 10-5.6 0v2.331a.467.467 0 01-.933 0V3.731a3.731 3.731 0 117.461 0v2.331a.466.466 0 01-.462.467z"
-                    fill={PRIMARY}
-                  />
-                  <Path
-                    data-name="Path 295"
-                    d="M5.596 10.57A1.244 1.244 0 116.84 9.326a1.245 1.245 0 01-1.244 1.244zm0-1.554a.311.311 0 10.311.311.311.311 0 00-.311-.311z"
-                    fill={PRIMARY}
-                  />
-                  <Path
-                    data-name="Path 296"
-                    d="M5.596 12.436a.466.466 0 01-.466-.466v-1.71a.467.467 0 11.933 0v1.71a.466.466 0 01-.467.466z"
-                    fill={PRIMARY}
-                  />
+                  width={12.292}
+                  height={12.717}>
+                  <G data-name="Group 3018">
+                    <G data-name="Group 3017">
+                      <Path
+                        data-name="Path 9259"
+                        d="M12.205 4.069L6.258.034a.2.2 0 00-.224 0L.087 4.069A.2.2 0 000 4.234v8.283a.2.2 0 00.2.2h11.893a.2.2 0 00.2-.2V4.234a.2.2 0 00-.088-.165zm-7.532 8.249h-2.15v-2.15h.451v1.075a.2.2 0 00.2.2h.85a.2.2 0 00.2-.2v-1.075h.451v2.15zM2.097 5.1v-.454h8.1V5.1zm1.274 5.947v-.876h.451v.876zm1.3-1.274H2.522V7.619h.451v1.076a.2.2 0 00.2.2h.85a.2.2 0 00.2-.2V7.619h.451zM3.372 8.5v-.881h.451V8.5zm3.85 3.823h-2.15v-2.15h.451v1.075a.2.2 0 00.2.2h.85a.2.2 0 00.2-.2v-1.08h.451v2.15zm-1.3-1.274v-.876h.451v.876zm5.974 1.274h-1.728V8.057a.2.2 0 00-.4 0v4.261h-2.15V9.969a.2.2 0 00-.2-.2h-2.35V7.42a.2.2 0 00-.2-.2h-2.35V5.5h7.248v1.708a.2.2 0 10.4 0V5.5h.226a.2.2 0 00.2-.2v-.85a.2.2 0 00-.2-.2h-8.5a.2.2 0 00-.2.2v.85a.2.2 0 00.2.2h.226v6.823H.398V4.34L6.149.439l5.748 3.9v7.979z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
+                  <G data-name="Group 3020">
+                    <G data-name="Group 3019">
+                      <Path
+                        data-name="Path 9260"
+                        d="M6.995 1.699h-1.7a.2.2 0 100 .4h1.7a.2.2 0 100-.4z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
+                  <G data-name="Group 3022">
+                    <G data-name="Group 3021">
+                      <Path
+                        data-name="Path 9261"
+                        d="M6.995 2.548h-1.7a.2.2 0 100 .4h1.7a.2.2 0 100-.4z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
+                  <G data-name="Group 3024">
+                    <G data-name="Group 3023">
+                      <Path
+                        data-name="Path 9262"
+                        d="M6.995 3.398h-1.7a.2.2 0 100 .4h1.7a.2.2 0 100-.4z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
+                  <G data-name="Group 3026">
+                    <G data-name="Group 3025">
+                      <Path
+                        data-name="Path 9263"
+                        d="M4.023 9.133h-.85a.2.2 0 000 .4h.85a.2.2 0 100-.4z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
+                  <G data-name="Group 3028">
+                    <G data-name="Group 3027">
+                      <Path
+                        data-name="Path 9264"
+                        d="M4.023 11.681h-.85a.2.2 0 000 .4h.85a.2.2 0 100-.4z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
+                  <G data-name="Group 3030">
+                    <G data-name="Group 3029">
+                      <Path
+                        data-name="Path 9265"
+                        d="M6.571 11.681h-.85a.2.2 0 100 .4h.85a.2.2 0 000-.4z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
                 </Svg>
               }
             />
             <InputBox
               variant="primary"
-              placeholder="Confirm Password"
+              placeholder="Length"
               secureTextEntry={true}
               svg={
                 <Svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width={20.192}
-                  height={20.922}
-                  viewBox="0 0 11.192 14.922">
-                  <Path
-                    data-name="Path 293"
-                    d="M9.793 14.923H1.4a1.4 1.4 0 01-1.4-1.4V6.996a1.4 1.4 0 011.4-1.4h8.394a1.4 1.4 0 011.4 1.4v6.529a1.4 1.4 0 01-1.401 1.398zM1.4 6.529a.467.467 0 00-.466.466v6.529a.467.467 0 00.466.466h8.394a.467.467 0 00.466-.466V6.996a.467.467 0 00-.466-.466z"
-                    fill={PRIMARY}
-                  />
-                  <Path
-                    data-name="Path 294"
-                    d="M8.86 6.529a.466.466 0 01-.466-.466V3.731a2.8 2.8 0 10-5.6 0v2.331a.467.467 0 01-.933 0V3.731a3.731 3.731 0 117.461 0v2.331a.466.466 0 01-.462.467z"
-                    fill={PRIMARY}
-                  />
-                  <Path
-                    data-name="Path 295"
-                    d="M5.596 10.57A1.244 1.244 0 116.84 9.326a1.245 1.245 0 01-1.244 1.244zm0-1.554a.311.311 0 10.311.311.311.311 0 00-.311-.311z"
-                    fill={PRIMARY}
-                  />
-                  <Path
-                    data-name="Path 296"
-                    d="M5.596 12.436a.466.466 0 01-.466-.466v-1.71a.467.467 0 11.933 0v1.71a.466.466 0 01-.467.466z"
-                    fill={PRIMARY}
-                  />
+                  width={12.292}
+                  height={12.717}>
+                  <G data-name="Group 3018">
+                    <G data-name="Group 3017">
+                      <Path
+                        data-name="Path 9259"
+                        d="M12.205 4.069L6.258.034a.2.2 0 00-.224 0L.087 4.069A.2.2 0 000 4.234v8.283a.2.2 0 00.2.2h11.893a.2.2 0 00.2-.2V4.234a.2.2 0 00-.088-.165zm-7.532 8.249h-2.15v-2.15h.451v1.075a.2.2 0 00.2.2h.85a.2.2 0 00.2-.2v-1.075h.451v2.15zM2.097 5.1v-.454h8.1V5.1zm1.274 5.947v-.876h.451v.876zm1.3-1.274H2.522V7.619h.451v1.076a.2.2 0 00.2.2h.85a.2.2 0 00.2-.2V7.619h.451zM3.372 8.5v-.881h.451V8.5zm3.85 3.823h-2.15v-2.15h.451v1.075a.2.2 0 00.2.2h.85a.2.2 0 00.2-.2v-1.08h.451v2.15zm-1.3-1.274v-.876h.451v.876zm5.974 1.274h-1.728V8.057a.2.2 0 00-.4 0v4.261h-2.15V9.969a.2.2 0 00-.2-.2h-2.35V7.42a.2.2 0 00-.2-.2h-2.35V5.5h7.248v1.708a.2.2 0 10.4 0V5.5h.226a.2.2 0 00.2-.2v-.85a.2.2 0 00-.2-.2h-8.5a.2.2 0 00-.2.2v.85a.2.2 0 00.2.2h.226v6.823H.398V4.34L6.149.439l5.748 3.9v7.979z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
+                  <G data-name="Group 3020">
+                    <G data-name="Group 3019">
+                      <Path
+                        data-name="Path 9260"
+                        d="M6.995 1.699h-1.7a.2.2 0 100 .4h1.7a.2.2 0 100-.4z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
+                  <G data-name="Group 3022">
+                    <G data-name="Group 3021">
+                      <Path
+                        data-name="Path 9261"
+                        d="M6.995 2.548h-1.7a.2.2 0 100 .4h1.7a.2.2 0 100-.4z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
+                  <G data-name="Group 3024">
+                    <G data-name="Group 3023">
+                      <Path
+                        data-name="Path 9262"
+                        d="M6.995 3.398h-1.7a.2.2 0 100 .4h1.7a.2.2 0 100-.4z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
+                  <G data-name="Group 3026">
+                    <G data-name="Group 3025">
+                      <Path
+                        data-name="Path 9263"
+                        d="M4.023 9.133h-.85a.2.2 0 000 .4h.85a.2.2 0 100-.4z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
+                  <G data-name="Group 3028">
+                    <G data-name="Group 3027">
+                      <Path
+                        data-name="Path 9264"
+                        d="M4.023 11.681h-.85a.2.2 0 000 .4h.85a.2.2 0 100-.4z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
+                  <G data-name="Group 3030">
+                    <G data-name="Group 3029">
+                      <Path
+                        data-name="Path 9265"
+                        d="M6.571 11.681h-.85a.2.2 0 100 .4h.85a.2.2 0 000-.4z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
                 </Svg>
               }
             />
             <InputBox
               variant="primary"
-              placeholder="Confirm Password"
+              placeholder="Price Per Day"
               secureTextEntry={true}
               svg={
                 <Svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width={20.192}
-                  height={20.922}
-                  viewBox="0 0 11.192 14.922">
-                  <Path
-                    data-name="Path 293"
-                    d="M9.793 14.923H1.4a1.4 1.4 0 01-1.4-1.4V6.996a1.4 1.4 0 011.4-1.4h8.394a1.4 1.4 0 011.4 1.4v6.529a1.4 1.4 0 01-1.401 1.398zM1.4 6.529a.467.467 0 00-.466.466v6.529a.467.467 0 00.466.466h8.394a.467.467 0 00.466-.466V6.996a.467.467 0 00-.466-.466z"
-                    fill={PRIMARY}
-                  />
-                  <Path
-                    data-name="Path 294"
-                    d="M8.86 6.529a.466.466 0 01-.466-.466V3.731a2.8 2.8 0 10-5.6 0v2.331a.467.467 0 01-.933 0V3.731a3.731 3.731 0 117.461 0v2.331a.466.466 0 01-.462.467z"
-                    fill={PRIMARY}
-                  />
-                  <Path
-                    data-name="Path 295"
-                    d="M5.596 10.57A1.244 1.244 0 116.84 9.326a1.245 1.245 0 01-1.244 1.244zm0-1.554a.311.311 0 10.311.311.311.311 0 00-.311-.311z"
-                    fill={PRIMARY}
-                  />
-                  <Path
-                    data-name="Path 296"
-                    d="M5.596 12.436a.466.466 0 01-.466-.466v-1.71a.467.467 0 11.933 0v1.71a.466.466 0 01-.467.466z"
-                    fill={PRIMARY}
-                  />
+                  width={12.292}
+                  height={12.717}>
+                  <G data-name="Group 3018">
+                    <G data-name="Group 3017">
+                      <Path
+                        data-name="Path 9259"
+                        d="M12.205 4.069L6.258.034a.2.2 0 00-.224 0L.087 4.069A.2.2 0 000 4.234v8.283a.2.2 0 00.2.2h11.893a.2.2 0 00.2-.2V4.234a.2.2 0 00-.088-.165zm-7.532 8.249h-2.15v-2.15h.451v1.075a.2.2 0 00.2.2h.85a.2.2 0 00.2-.2v-1.075h.451v2.15zM2.097 5.1v-.454h8.1V5.1zm1.274 5.947v-.876h.451v.876zm1.3-1.274H2.522V7.619h.451v1.076a.2.2 0 00.2.2h.85a.2.2 0 00.2-.2V7.619h.451zM3.372 8.5v-.881h.451V8.5zm3.85 3.823h-2.15v-2.15h.451v1.075a.2.2 0 00.2.2h.85a.2.2 0 00.2-.2v-1.08h.451v2.15zm-1.3-1.274v-.876h.451v.876zm5.974 1.274h-1.728V8.057a.2.2 0 00-.4 0v4.261h-2.15V9.969a.2.2 0 00-.2-.2h-2.35V7.42a.2.2 0 00-.2-.2h-2.35V5.5h7.248v1.708a.2.2 0 10.4 0V5.5h.226a.2.2 0 00.2-.2v-.85a.2.2 0 00-.2-.2h-8.5a.2.2 0 00-.2.2v.85a.2.2 0 00.2.2h.226v6.823H.398V4.34L6.149.439l5.748 3.9v7.979z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
+                  <G data-name="Group 3020">
+                    <G data-name="Group 3019">
+                      <Path
+                        data-name="Path 9260"
+                        d="M6.995 1.699h-1.7a.2.2 0 100 .4h1.7a.2.2 0 100-.4z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
+                  <G data-name="Group 3022">
+                    <G data-name="Group 3021">
+                      <Path
+                        data-name="Path 9261"
+                        d="M6.995 2.548h-1.7a.2.2 0 100 .4h1.7a.2.2 0 100-.4z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
+                  <G data-name="Group 3024">
+                    <G data-name="Group 3023">
+                      <Path
+                        data-name="Path 9262"
+                        d="M6.995 3.398h-1.7a.2.2 0 100 .4h1.7a.2.2 0 100-.4z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
+                  <G data-name="Group 3026">
+                    <G data-name="Group 3025">
+                      <Path
+                        data-name="Path 9263"
+                        d="M4.023 9.133h-.85a.2.2 0 000 .4h.85a.2.2 0 100-.4z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
+                  <G data-name="Group 3028">
+                    <G data-name="Group 3027">
+                      <Path
+                        data-name="Path 9264"
+                        d="M4.023 11.681h-.85a.2.2 0 000 .4h.85a.2.2 0 100-.4z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
+                  <G data-name="Group 3030">
+                    <G data-name="Group 3029">
+                      <Path
+                        data-name="Path 9265"
+                        d="M6.571 11.681h-.85a.2.2 0 100 .4h.85a.2.2 0 000-.4z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
                 </Svg>
               }
             />
             <InputBox
               variant="primary"
-              placeholder="Confirm Password"
+              placeholder="Price Per Unit"
               secureTextEntry={true}
               svg={
                 <Svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width={20.192}
-                  height={20.922}
-                  viewBox="0 0 11.192 14.922">
-                  <Path
-                    data-name="Path 293"
-                    d="M9.793 14.923H1.4a1.4 1.4 0 01-1.4-1.4V6.996a1.4 1.4 0 011.4-1.4h8.394a1.4 1.4 0 011.4 1.4v6.529a1.4 1.4 0 01-1.401 1.398zM1.4 6.529a.467.467 0 00-.466.466v6.529a.467.467 0 00.466.466h8.394a.467.467 0 00.466-.466V6.996a.467.467 0 00-.466-.466z"
-                    fill={PRIMARY}
-                  />
-                  <Path
-                    data-name="Path 294"
-                    d="M8.86 6.529a.466.466 0 01-.466-.466V3.731a2.8 2.8 0 10-5.6 0v2.331a.467.467 0 01-.933 0V3.731a3.731 3.731 0 117.461 0v2.331a.466.466 0 01-.462.467z"
-                    fill={PRIMARY}
-                  />
-                  <Path
-                    data-name="Path 295"
-                    d="M5.596 10.57A1.244 1.244 0 116.84 9.326a1.245 1.245 0 01-1.244 1.244zm0-1.554a.311.311 0 10.311.311.311.311 0 00-.311-.311z"
-                    fill={PRIMARY}
-                  />
-                  <Path
-                    data-name="Path 296"
-                    d="M5.596 12.436a.466.466 0 01-.466-.466v-1.71a.467.467 0 11.933 0v1.71a.466.466 0 01-.467.466z"
-                    fill={PRIMARY}
-                  />
+                  width={12.292}
+                  height={12.717}>
+                  <G data-name="Group 3018">
+                    <G data-name="Group 3017">
+                      <Path
+                        data-name="Path 9259"
+                        d="M12.205 4.069L6.258.034a.2.2 0 00-.224 0L.087 4.069A.2.2 0 000 4.234v8.283a.2.2 0 00.2.2h11.893a.2.2 0 00.2-.2V4.234a.2.2 0 00-.088-.165zm-7.532 8.249h-2.15v-2.15h.451v1.075a.2.2 0 00.2.2h.85a.2.2 0 00.2-.2v-1.075h.451v2.15zM2.097 5.1v-.454h8.1V5.1zm1.274 5.947v-.876h.451v.876zm1.3-1.274H2.522V7.619h.451v1.076a.2.2 0 00.2.2h.85a.2.2 0 00.2-.2V7.619h.451zM3.372 8.5v-.881h.451V8.5zm3.85 3.823h-2.15v-2.15h.451v1.075a.2.2 0 00.2.2h.85a.2.2 0 00.2-.2v-1.08h.451v2.15zm-1.3-1.274v-.876h.451v.876zm5.974 1.274h-1.728V8.057a.2.2 0 00-.4 0v4.261h-2.15V9.969a.2.2 0 00-.2-.2h-2.35V7.42a.2.2 0 00-.2-.2h-2.35V5.5h7.248v1.708a.2.2 0 10.4 0V5.5h.226a.2.2 0 00.2-.2v-.85a.2.2 0 00-.2-.2h-8.5a.2.2 0 00-.2.2v.85a.2.2 0 00.2.2h.226v6.823H.398V4.34L6.149.439l5.748 3.9v7.979z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
+                  <G data-name="Group 3020">
+                    <G data-name="Group 3019">
+                      <Path
+                        data-name="Path 9260"
+                        d="M6.995 1.699h-1.7a.2.2 0 100 .4h1.7a.2.2 0 100-.4z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
+                  <G data-name="Group 3022">
+                    <G data-name="Group 3021">
+                      <Path
+                        data-name="Path 9261"
+                        d="M6.995 2.548h-1.7a.2.2 0 100 .4h1.7a.2.2 0 100-.4z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
+                  <G data-name="Group 3024">
+                    <G data-name="Group 3023">
+                      <Path
+                        data-name="Path 9262"
+                        d="M6.995 3.398h-1.7a.2.2 0 100 .4h1.7a.2.2 0 100-.4z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
+                  <G data-name="Group 3026">
+                    <G data-name="Group 3025">
+                      <Path
+                        data-name="Path 9263"
+                        d="M4.023 9.133h-.85a.2.2 0 000 .4h.85a.2.2 0 100-.4z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
+                  <G data-name="Group 3028">
+                    <G data-name="Group 3027">
+                      <Path
+                        data-name="Path 9264"
+                        d="M4.023 11.681h-.85a.2.2 0 000 .4h.85a.2.2 0 100-.4z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
+                  <G data-name="Group 3030">
+                    <G data-name="Group 3029">
+                      <Path
+                        data-name="Path 9265"
+                        d="M6.571 11.681h-.85a.2.2 0 100 .4h.85a.2.2 0 000-.4z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
                 </Svg>
               }
             />
             <InputBox
               variant="primary"
-              placeholder="Confirm Password"
+              placeholder="Address"
               secureTextEntry={true}
               svg={
                 <Svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width={20.192}
-                  height={20.922}
-                  viewBox="0 0 11.192 14.922">
-                  <Path
-                    data-name="Path 293"
-                    d="M9.793 14.923H1.4a1.4 1.4 0 01-1.4-1.4V6.996a1.4 1.4 0 011.4-1.4h8.394a1.4 1.4 0 011.4 1.4v6.529a1.4 1.4 0 01-1.401 1.398zM1.4 6.529a.467.467 0 00-.466.466v6.529a.467.467 0 00.466.466h8.394a.467.467 0 00.466-.466V6.996a.467.467 0 00-.466-.466z"
-                    fill={PRIMARY}
-                  />
-                  <Path
-                    data-name="Path 294"
-                    d="M8.86 6.529a.466.466 0 01-.466-.466V3.731a2.8 2.8 0 10-5.6 0v2.331a.467.467 0 01-.933 0V3.731a3.731 3.731 0 117.461 0v2.331a.466.466 0 01-.462.467z"
-                    fill={PRIMARY}
-                  />
-                  <Path
-                    data-name="Path 295"
-                    d="M5.596 10.57A1.244 1.244 0 116.84 9.326a1.245 1.245 0 01-1.244 1.244zm0-1.554a.311.311 0 10.311.311.311.311 0 00-.311-.311z"
-                    fill={PRIMARY}
-                  />
-                  <Path
-                    data-name="Path 296"
-                    d="M5.596 12.436a.466.466 0 01-.466-.466v-1.71a.467.467 0 11.933 0v1.71a.466.466 0 01-.467.466z"
-                    fill={PRIMARY}
-                  />
+                  width={12.292}
+                  height={12.717}>
+                  <G data-name="Group 3018">
+                    <G data-name="Group 3017">
+                      <Path
+                        data-name="Path 9259"
+                        d="M12.205 4.069L6.258.034a.2.2 0 00-.224 0L.087 4.069A.2.2 0 000 4.234v8.283a.2.2 0 00.2.2h11.893a.2.2 0 00.2-.2V4.234a.2.2 0 00-.088-.165zm-7.532 8.249h-2.15v-2.15h.451v1.075a.2.2 0 00.2.2h.85a.2.2 0 00.2-.2v-1.075h.451v2.15zM2.097 5.1v-.454h8.1V5.1zm1.274 5.947v-.876h.451v.876zm1.3-1.274H2.522V7.619h.451v1.076a.2.2 0 00.2.2h.85a.2.2 0 00.2-.2V7.619h.451zM3.372 8.5v-.881h.451V8.5zm3.85 3.823h-2.15v-2.15h.451v1.075a.2.2 0 00.2.2h.85a.2.2 0 00.2-.2v-1.08h.451v2.15zm-1.3-1.274v-.876h.451v.876zm5.974 1.274h-1.728V8.057a.2.2 0 00-.4 0v4.261h-2.15V9.969a.2.2 0 00-.2-.2h-2.35V7.42a.2.2 0 00-.2-.2h-2.35V5.5h7.248v1.708a.2.2 0 10.4 0V5.5h.226a.2.2 0 00.2-.2v-.85a.2.2 0 00-.2-.2h-8.5a.2.2 0 00-.2.2v.85a.2.2 0 00.2.2h.226v6.823H.398V4.34L6.149.439l5.748 3.9v7.979z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
+                  <G data-name="Group 3020">
+                    <G data-name="Group 3019">
+                      <Path
+                        data-name="Path 9260"
+                        d="M6.995 1.699h-1.7a.2.2 0 100 .4h1.7a.2.2 0 100-.4z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
+                  <G data-name="Group 3022">
+                    <G data-name="Group 3021">
+                      <Path
+                        data-name="Path 9261"
+                        d="M6.995 2.548h-1.7a.2.2 0 100 .4h1.7a.2.2 0 100-.4z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
+                  <G data-name="Group 3024">
+                    <G data-name="Group 3023">
+                      <Path
+                        data-name="Path 9262"
+                        d="M6.995 3.398h-1.7a.2.2 0 100 .4h1.7a.2.2 0 100-.4z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
+                  <G data-name="Group 3026">
+                    <G data-name="Group 3025">
+                      <Path
+                        data-name="Path 9263"
+                        d="M4.023 9.133h-.85a.2.2 0 000 .4h.85a.2.2 0 100-.4z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
+                  <G data-name="Group 3028">
+                    <G data-name="Group 3027">
+                      <Path
+                        data-name="Path 9264"
+                        d="M4.023 11.681h-.85a.2.2 0 000 .4h.85a.2.2 0 100-.4z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
+                  <G data-name="Group 3030">
+                    <G data-name="Group 3029">
+                      <Path
+                        data-name="Path 9265"
+                        d="M6.571 11.681h-.85a.2.2 0 100 .4h.85a.2.2 0 000-.4z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
                 </Svg>
               }
             />
             <InputBox
               variant="primary"
-              placeholder="Confirm Password"
+              placeholder="Description"
               secureTextEntry={true}
               svg={
                 <Svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width={20.192}
-                  height={20.922}
-                  viewBox="0 0 11.192 14.922">
-                  <Path
-                    data-name="Path 293"
-                    d="M9.793 14.923H1.4a1.4 1.4 0 01-1.4-1.4V6.996a1.4 1.4 0 011.4-1.4h8.394a1.4 1.4 0 011.4 1.4v6.529a1.4 1.4 0 01-1.401 1.398zM1.4 6.529a.467.467 0 00-.466.466v6.529a.467.467 0 00.466.466h8.394a.467.467 0 00.466-.466V6.996a.467.467 0 00-.466-.466z"
-                    fill={PRIMARY}
-                  />
-                  <Path
-                    data-name="Path 294"
-                    d="M8.86 6.529a.466.466 0 01-.466-.466V3.731a2.8 2.8 0 10-5.6 0v2.331a.467.467 0 01-.933 0V3.731a3.731 3.731 0 117.461 0v2.331a.466.466 0 01-.462.467z"
-                    fill={PRIMARY}
-                  />
-                  <Path
-                    data-name="Path 295"
-                    d="M5.596 10.57A1.244 1.244 0 116.84 9.326a1.245 1.245 0 01-1.244 1.244zm0-1.554a.311.311 0 10.311.311.311.311 0 00-.311-.311z"
-                    fill={PRIMARY}
-                  />
-                  <Path
-                    data-name="Path 296"
-                    d="M5.596 12.436a.466.466 0 01-.466-.466v-1.71a.467.467 0 11.933 0v1.71a.466.466 0 01-.467.466z"
-                    fill={PRIMARY}
-                  />
+                  width={12.292}
+                  height={12.717}>
+                  <G data-name="Group 3018">
+                    <G data-name="Group 3017">
+                      <Path
+                        data-name="Path 9259"
+                        d="M12.205 4.069L6.258.034a.2.2 0 00-.224 0L.087 4.069A.2.2 0 000 4.234v8.283a.2.2 0 00.2.2h11.893a.2.2 0 00.2-.2V4.234a.2.2 0 00-.088-.165zm-7.532 8.249h-2.15v-2.15h.451v1.075a.2.2 0 00.2.2h.85a.2.2 0 00.2-.2v-1.075h.451v2.15zM2.097 5.1v-.454h8.1V5.1zm1.274 5.947v-.876h.451v.876zm1.3-1.274H2.522V7.619h.451v1.076a.2.2 0 00.2.2h.85a.2.2 0 00.2-.2V7.619h.451zM3.372 8.5v-.881h.451V8.5zm3.85 3.823h-2.15v-2.15h.451v1.075a.2.2 0 00.2.2h.85a.2.2 0 00.2-.2v-1.08h.451v2.15zm-1.3-1.274v-.876h.451v.876zm5.974 1.274h-1.728V8.057a.2.2 0 00-.4 0v4.261h-2.15V9.969a.2.2 0 00-.2-.2h-2.35V7.42a.2.2 0 00-.2-.2h-2.35V5.5h7.248v1.708a.2.2 0 10.4 0V5.5h.226a.2.2 0 00.2-.2v-.85a.2.2 0 00-.2-.2h-8.5a.2.2 0 00-.2.2v.85a.2.2 0 00.2.2h.226v6.823H.398V4.34L6.149.439l5.748 3.9v7.979z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
+                  <G data-name="Group 3020">
+                    <G data-name="Group 3019">
+                      <Path
+                        data-name="Path 9260"
+                        d="M6.995 1.699h-1.7a.2.2 0 100 .4h1.7a.2.2 0 100-.4z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
+                  <G data-name="Group 3022">
+                    <G data-name="Group 3021">
+                      <Path
+                        data-name="Path 9261"
+                        d="M6.995 2.548h-1.7a.2.2 0 100 .4h1.7a.2.2 0 100-.4z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
+                  <G data-name="Group 3024">
+                    <G data-name="Group 3023">
+                      <Path
+                        data-name="Path 9262"
+                        d="M6.995 3.398h-1.7a.2.2 0 100 .4h1.7a.2.2 0 100-.4z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
+                  <G data-name="Group 3026">
+                    <G data-name="Group 3025">
+                      <Path
+                        data-name="Path 9263"
+                        d="M4.023 9.133h-.85a.2.2 0 000 .4h.85a.2.2 0 100-.4z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
+                  <G data-name="Group 3028">
+                    <G data-name="Group 3027">
+                      <Path
+                        data-name="Path 9264"
+                        d="M4.023 11.681h-.85a.2.2 0 000 .4h.85a.2.2 0 100-.4z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
+                  <G data-name="Group 3030">
+                    <G data-name="Group 3029">
+                      <Path
+                        data-name="Path 9265"
+                        d="M6.571 11.681h-.85a.2.2 0 100 .4h.85a.2.2 0 000-.4z"
+                        fill="#4571b0"
+                      />
+                    </G>
+                  </G>
                 </Svg>
               }
             />
           </View>
         </ScrollView>
+         <View style={{paddingHorizontal:18}}><Buttons
+            placeholder="Next"
+            onPress={() => {
+              navigation.navigate('AddWarehouseMoreInfo');
+            }}
+          /></View>
       </ImageBackground>
     );
   }

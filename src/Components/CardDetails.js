@@ -11,6 +11,7 @@ import {
 } from 'react-native';
 import Svg, {G, Path} from 'react-native-svg';
 import {
+  DARK,
   INPUT_BG,
   PRIMARY,
   SECONDARY,
@@ -24,11 +25,12 @@ export default function CardDetails({onPress}) {
       onPress={onPress}
       style={{
         width: '100%',
-        height: 120,
+        height: 110,
         borderRadius: 8,
         backgroundColor: WHITE,
         display: 'flex',
         flexDirection: 'row',
+        justifyContent: 'center',
         alignItems: 'center',
         paddingVertical: 20,
         marginVertical: 10,
@@ -37,7 +39,7 @@ export default function CardDetails({onPress}) {
       <Image
         source={require('../Assets/warehouse__bg.png')}
         style={{
-          width: 80,
+          width: '25%',
           height: '100%',
           borderRadius: 12,
           marginRight: 10,
@@ -59,7 +61,7 @@ export default function CardDetails({onPress}) {
           }}>
           <Text
             style={{
-              fontSize: 18,
+              fontSize: 16,
               color: TEXT_COLOR,
               fontWeight: 'bold',
             }}>
@@ -91,6 +93,27 @@ export default function CardDetails({onPress}) {
           style={{
             display: 'flex',
             flexDirection: 'row',
+            alignItems: 'center',
+          }}>
+          <Svg
+            xmlns="http://www.w3.org/2000/svg"
+            width={12.472}
+            height={12.472}>
+            <Path
+              data-name="Icon awesome-location-arrow"
+              d="M10.828.086L.7 4.76a1.181 1.181 0 00.468 2.26h4.285v4.28a1.181 1.181 0 002.259.467l4.675-10.123A1.215 1.215 0 0010.828.086z"
+              fill="#bcb6b6"
+            />
+          </Svg>
+          <Text style={{fontSize: 13, color: SECONDARY, marginLeft: 6}}>
+            Lahore
+          </Text>
+        </View>
+
+        <View
+          style={{
+            display: 'flex',
+            flexDirection: 'row',
             justifyContent: 'space-between',
             alignItems: 'center',
             marginBottom: 8,
@@ -98,112 +121,16 @@ export default function CardDetails({onPress}) {
           <View
             style={{
               display: 'flex',
+              justifyContent: 'center',
               flexDirection: 'row',
-              alignItems: 'center',
             }}>
-            <Svg
-              xmlns="http://www.w3.org/2000/svg"
-              width={17.529}
-              height={10.445}
-              viewBox="0 0 17.529 10.445">
-              <G data-name="Group 2979" fill={SECONDARY}>
-                <Path
-                  data-name="Path 2329"
-                  d="M11.317 0h-10.1A1.219 1.219 0 000 1.217v8.011a1.219 1.219 0 001.217 1.217h10.1a1.219 1.219 0 001.217-1.217V1.217A1.219 1.219 0 0011.317 0zm0 0"
-                />
-                <Path
-                  data-name="Path 2330"
-                  d="M13.345 6.89l4.183 2.284V1.297l-4.183 2.284zm0 0"
-                />
-              </G>
-            </Svg>
-            <Text style={{fontSize: 14, color: SECONDARY, marginLeft: 6}}>
-              3 cameras
-            </Text>
+            <Text style={{fontSize: 13, color: SECONDARY}}>Customer:</Text>
+            <Text style={{fontSize: 13, color: DARK, marginRight: 8}}> 10</Text>
           </View>
+
           <Text style={{color: PRIMARY, fontSize: 16, fontWeight: 'bold'}}>
             $50 / month
           </Text>
-        </View>
-        <View
-          style={{
-            display: 'flex',
-            flexDirection: 'row',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-          }}>
-          <View
-            style={{
-              display: 'flex',
-              flexDirection: 'row',
-              alignItems: 'center',
-            }}>
-            <Svg
-              xmlns="http://www.w3.org/2000/svg"
-              width={18.808}
-              height={13.925}
-              viewBox="0 0 18.808 13.925">
-              <G data-name="Group 934">
-                <G data-name="Group 933">
-                  <Path
-                    data-name="Path 2324"
-                    d="M14.83 5.606H3.979L3.328 8.5h12.153z"
-                    fill={SECONDARY}
-                  />
-                </G>
-              </G>
-              <G data-name="Group 936">
-                <G data-name="Group 935">
-                  <Path
-                    data-name="Path 2325"
-                    d="M17.181 0H1.628A1.629 1.629 0 000 1.628v5.245a1.63 1.63 0 001.628 1.628h.588l.8-3.555a.543.543 0 01.529-.423h11.719a.543.543 0 01.529.423l.8 3.555h.588a1.63 1.63 0 001.628-1.628V1.628A1.63 1.63 0 0017.181 0zM12.3 3.798h-.723a.543.543 0 110-1.085h.723a.543.543 0 110 1.085zm2.532 0h-.723a.543.543 0 110-1.085h.723a.543.543 0 110 1.085z"
-                    fill={SECONDARY}
-                  />
-                </G>
-              </G>
-              <G data-name="Group 938">
-                <G data-name="Group 937">
-                  <Path
-                    data-name="Path 2326"
-                    d="M9.766 10.971a.5.5 0 01.1-.324 1.561 1.561 0 00.258-.882.543.543 0 00-1.085 0 .5.5 0 01-.1.324 1.636 1.636 0 000 1.764.558.558 0 010 .647 1.562 1.562 0 00-.258.882.543.543 0 001.085 0 .5.5 0 01.1-.324 1.636 1.636 0 000-1.764.5.5 0 01-.1-.323z"
-                    fill={SECONDARY}
-                  />
-                </G>
-              </G>
-              <G data-name="Group 940">
-                <G data-name="Group 939">
-                  <Path
-                    data-name="Path 2327"
-                    d="M6.872 10.971a.5.5 0 01.1-.324 1.561 1.561 0 00.258-.882.543.543 0 10-1.085 0 .5.5 0 01-.1.324 1.636 1.636 0 000 1.764.558.558 0 010 .647 1.562 1.562 0 00-.258.882.543.543 0 001.085 0 .5.5 0 01.1-.324 1.636 1.636 0 000-1.764.5.5 0 01-.1-.323z"
-                    fill={SECONDARY}
-                  />
-                </G>
-              </G>
-              <G data-name="Group 942">
-                <G data-name="Group 941">
-                  <Path
-                    data-name="Path 2328"
-                    d="M12.659 10.971a.5.5 0 01.1-.324 1.561 1.561 0 00.258-.882.543.543 0 00-1.085 0 .5.5 0 01-.1.324 1.636 1.636 0 000 1.764.558.558 0 010 .647 1.562 1.562 0 00-.258.882.543.543 0 001.085 0 .5.5 0 01.1-.324 1.636 1.636 0 000-1.764.5.5 0 01-.1-.323z"
-                    fill={SECONDARY}
-                  />
-                </G>
-              </G>
-            </Svg>
-            <Text style={{fontSize: 14, color: SECONDARY, marginLeft: 6}}>
-              4 Refregrators
-            </Text>
-          </View>
-          <View
-            style={{
-              display: 'flex',
-              flexDirection: 'row',
-              alignItems: 'center',
-            }}>
-            <Text style={{fontSize: 14, color: SECONDARY, marginLeft: 6}}>
-              Area avail:
-            </Text>
-            <Text>10ft</Text>
-          </View>
         </View>
       </View>
     </TouchableOpacity>

@@ -6,6 +6,8 @@ import DashboardScreen from '../Screens/DashboardScreen';
 import ProfileScreen from '../Screens/ProfileScreen';
 import Svg, {Path, G} from 'react-native-svg';
 import {SECONDARY, PRIMARY, WHITE} from '../Constants/Colors';
+import WarehousesScreen from '../Screens/WarehousesScreen';
+import RepresentativesScreen from '../Screens/RepresentativesScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -45,8 +47,8 @@ export default function BottomTabDashboard() {
         }}
       />
       <Tab.Screen
-        name="Advance Booking"
-        component={AdvanceBookingScreen}
+        name="Warehouses Screen"
+        component={WarehousesScreen}
         options={{
           tabBarIcon: ({focused}) => (
             <View
@@ -60,22 +62,60 @@ export default function BottomTabDashboard() {
               }}>
               <Svg
                 xmlns="http://www.w3.org/2000/svg"
-                width={20.865}
-                height={20.359}
-                viewBox="0 0 24.865 23.359">
-                <G fill={focused ? WHITE : PRIMARY}>
+                width={20.5}
+                height={20.5}>
+                <G data-name="warehouse (1)" fill={focused ? WHITE : PRIMARY}>
                   <Path
-                    data-name="Path 3092"
-                    d="M19.752 0H5.113a5.113 5.113 0 00-.03 10.226h2.3V6.22a3.257 3.257 0 013.254-3.254h.007a3.259 3.259 0 013.247 3.254v4.006h5.865a5.113 5.113 0 000-10.226zM21.2 4.4l-2.914 2.914a.728.728 0 01-1.03 0L15.8 5.857a.728.728 0 011.03-1.03l.942.942 2.4-2.4A.728.728 0 1121.2 4.4z"
+                    data-name="Path 9252"
+                    d="M22.2 7.63L11.658.13a.7.7 0 00-.815 0L.3 7.63a.7.7 0 00-.3.57v3.281a.7.7 0 001.11.574l.765-.545v10.052a.938.938 0 00.937.937h1.875V11.25h13.125V22.5h1.875a.938.938 0 00.937-.937v-10.05l.764.544a.705.705 0 00.408.13.714.714 0 00.322-.078.7.7 0 00.381-.625V8.2a.7.7 0 00-.299-.57z"
                   />
                   <Path
-                    data-name="Path 3093"
-                    d="M17.117 12.276l-4.689-.487V6.22a1.8 1.8 0 10-3.594 0v9.32h-.017l-1.774-1.481a1.728 1.728 0 10-2.215 2.653l3.6 3h10.6v-5.27a2.185 2.185 0 00-1.911-2.166z"
+                    data-name="Path 9253"
+                    d="M6.094 20.156h10.312V22.5H6.094z"
                   />
                   <Path
-                    data-name="Path 3094"
-                    d="M8.836 22.631a.729.729 0 00.728.729h8.741a.729.729 0 00.728-.729v-1.457h-10.2z"
+                    data-name="Path 9254"
+                    d="M6.094 16.406h10.312v2.344H6.094z"
                   />
+                  <Path
+                    data-name="Path 9255"
+                    d="M6.094 12.656h10.312V15H6.094z"
+                  />
+                </G>
+              </Svg>
+            </View>
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Representatives Screen"
+        component={RepresentativesScreen}
+        options={{
+          tabBarIcon: ({focused}) => (
+            <View
+              style={{
+                width: 35,
+                height: 30,
+                backgroundColor: focused ? PRIMARY : WHITE,
+                borderRadius: 4,
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}>
+              <Svg
+                xmlns="http://www.w3.org/2000/svg"
+                width={20.05}
+                height={20.403}>
+                <G data-name="Group 3010">
+                  <G data-name="Group 3009" fill={focused ? WHITE : PRIMARY}>
+                    <Path
+                      data-name="Path 9250"
+                      d="M15.566 13.83a4.655 4.655 0 01-3.768 1.922H9.626a1.734 1.734 0 01-1.63-1.142 5.506 5.506 0 01-.877-.347 5.9 5.9 0 01-1.638-1.212 6.992 6.992 0 00-5.483 6.826v.437a1.088 1.088 0 001.088 1.088h16.876a1.088 1.088 0 001.088-1.088v-.437a6.987 6.987 0 00-3.484-6.047z"
+                    />
+                    <Path
+                      data-name="Path 9251"
+                      d="M4.327 10.811a1.238 1.238 0 001.085-.641l.017.045.005.014a4.833 4.833 0 002.725 2.87 1.732 1.732 0 011.468-.812h2.171a1.215 1.215 0 00.595-.16 2.453 2.453 0 00.7-.81 6.259 6.259 0 00.543-1.147 1.245 1.245 0 00.342.394v.536a2.184 2.184 0 01-2.181 2.181H9.628a.743.743 0 000 1.486h2.171a3.671 3.671 0 003.667-3.667v-.532a1.237 1.237 0 00.5-.991v-3.1a1.236 1.236 0 00-.514-1 5.941 5.941 0 00-11.844 0 1.236 1.236 0 00-.514 1v3.1a1.239 1.239 0 001.233 1.234zm5.2-9.325A4.461 4.461 0 0113.958 5.5a1.243 1.243 0 00-.348.43 4.24 4.24 0 00-8.167-.007v.007a1.243 1.243 0 00-.348-.43 4.461 4.461 0 014.43-4.014z"
+                    />
+                  </G>
                 </G>
               </Svg>
             </View>

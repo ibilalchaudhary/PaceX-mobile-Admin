@@ -30,6 +30,11 @@ import ChangePasswordScreen from '../Screens/ChangePasswordScreen';
 import ReviewScreen from '../Screens/ReviewScreen';
 import PaymentOptionsScreen from '../Screens/PaymentOptionsScreen';
 import AdvanceBookedScreen from '../Screens/AdvanceBookedScreen';
+import WarehousesScreen from '../Screens/WarehousesScreen';
+import RepresentativesScreen from '../Screens/RepresentativesScreen';
+import ManageRepresentativeScreen from '../Screens/ManageRepresentativeScreen';
+import AddRepresentativeScreen from '../Screens/AddRepresentativeScreen';
+import AddWarehouseScreen from '../Screens/AddWarehouseScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -73,6 +78,17 @@ export default function StackNavigation() {
       <Stack.Screen name="CencelRequest" component={CencelRequestScreen} />
       <Stack.Screen name="ChangePassword" component={ChangePasswordScreen} />
       <Stack.Screen name="AdvanceBooked" component={AdvanceBookedScreen} />
+      <Stack.Screen name="Warehouses" component={WarehousesScreen} />
+      <Stack.Screen name="Representatives" component={RepresentativesScreen} />
+      <Stack.Screen
+        name="AddRepresentative"
+        component={AddRepresentativeScreen}
+      />
+      <Stack.Screen
+        name="ManageRepresentative"
+        component={ManageRepresentativeScreen}
+      />
+      <Stack.Screen name="AddWarehouse" component={AddWarehouseScreen} />
     </Stack.Navigator>
   );
 }

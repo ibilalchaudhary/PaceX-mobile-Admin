@@ -10,8 +10,6 @@ import {
 import {DISABLE, PRIMARY, TEXT_COLOR, WHITE} from '../Constants/Colors';
 import Svg, {G, Path} from 'react-native-svg';
 import {height, width} from '../Constants/Dimensions';
-import InputBox from '../Components/InputBox';
-import Selector from '../Components/Selector';
 import CardDetails from '../Components/CardDetails';
 export default class DashboardScreen extends Component {
   constructor() {

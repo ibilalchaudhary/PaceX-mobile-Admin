@@ -1,12 +1,6 @@
 import React, {Component} from 'react';
 import {DARK, INPUT_BG, PRIMARY, SECONDARY, WHITE} from '../Constants/Colors';
-import {
-  View,
-  Text,
-  TouchableOpacity,
-  ScrollView,
-  TextInput,
-} from 'react-native';
+import {View, Text, TouchableOpacity, ScrollView} from 'react-native';
 import Svg, {G, Path} from 'react-native-svg';
 import {height, width} from '../Constants/Dimensions';
 import Header from '../Components/Header';
@@ -14,7 +8,6 @@ import InputBox from '../Components/InputBox';
 import Dropdown from '../Components/Dropdown';
 import RangeSlider from '../Components/RangeSlider';
 import Buttons from '../Components/Buttons';
-import {Picker} from '@react-native-picker/picker';
 
 export default class FilterScreen extends Component {
   constructor(props) {

@@ -2,13 +2,7 @@ import React, {Component} from 'react';
 import {View, Text, TouchableOpacity, Image} from 'react-native';
 import Svg, {G, Path} from 'react-native-svg';
 
-import {
-  INPUT_BG,
-  PRIMARY,
-  SECONDARY,
-  TEXT_COLOR,
-  WHITE,
-} from '../Constants/Colors';
+import {PRIMARY, SECONDARY, TEXT_COLOR, WHITE} from '../Constants/Colors';
 
 export default class BookingCard extends Component {
   render() {

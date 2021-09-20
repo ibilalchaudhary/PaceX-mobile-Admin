@@ -17,7 +17,6 @@ import {
 } from 'react-native';
 import Svg, {Defs, ClipPath, Path, G} from 'react-native-svg';
 import Header from '../Components/Header';
-import Buttons from '../Components/Buttons';
 
 function MessageSentCard({text, time}) {
   return (

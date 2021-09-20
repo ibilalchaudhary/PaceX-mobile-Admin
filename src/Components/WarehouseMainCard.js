@@ -1,16 +1,7 @@
 import React from 'react';
-import {
-  DARK,
-  DISABLE,
-  INPUT_BG,
-  PRIMARY,
-  SECONDARY,
-  TEXT_COLOR,
-  WHITE,
-} from '../Constants/Colors';
+import {PRIMARY, WHITE} from '../Constants/Colors';
 import {View, Text, Image} from 'react-native';
 import Svg, {G, Path} from 'react-native-svg';
-import {TouchableOpacity} from 'react-native-gesture-handler';
 
 export default function WarehouseMainCard() {
   return (

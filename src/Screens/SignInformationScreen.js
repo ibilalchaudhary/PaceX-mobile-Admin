@@ -8,10 +8,8 @@ import {
   ScrollView,
 } from 'react-native';
 import Headings from '../Components/Headings';
-import BouncyCheckbox from 'react-native-bouncy-checkbox';
 import {
   DARK,
-  DISABLE,
   INPUT_BG,
   PRIMARY,
   SECONDARY,
@@ -22,7 +20,6 @@ import {height, width} from '../Constants/Dimensions';
 import Svg, {G, Path} from 'react-native-svg';
 import InputBox from '../Components/InputBox';
 import Buttons from '../Components/Buttons';
-import SocialLinks from '../Components/SocialLinks';
 import Logo from '../Components/Logo';
 import Dropdown from '../Components/Dropdown';
 

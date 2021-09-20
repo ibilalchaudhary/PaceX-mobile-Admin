@@ -9,7 +9,6 @@ import {
   Image,
   Modal,
 } from 'react-native';
-import Headings from '../Components/Headings';
 import {
   DARK,
   DISABLE,
@@ -19,12 +18,8 @@ import {
   WHITE,
 } from '../Constants/Colors';
 import {height, width} from '../Constants/Dimensions';
-import Svg, {G, Path, Text as TextSvg} from 'react-native-svg';
 import Header from '../Components/Header';
-import CardDetails from '../Components/CardDetails';
-import RepresentativeCard from '../Components/RepresentativeCard';
 import Buttons from '../Components/Buttons';
-import InputBox from '../Components/InputBox';
 import Selector from '../Components/Selector';
 
 function AddCategoryLine({heading, onPress}) {

@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {Text, ScrollView, View, TouchableOpacity, Image} from 'react-native';
 import {PRIMARY, TEXT_COLOR, WHITE} from '../Constants/Colors';
-import {Height, Width} from '../Constants/Constants';
 import Header from '../Components/Header';
 import Svg, {G, Path, Ellipse} from 'react-native-svg';
 

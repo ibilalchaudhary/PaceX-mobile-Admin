@@ -1,13 +1,5 @@
 import React, {Component} from 'react';
-import {
-  View,
-  Text,
-  ImageBackground,
-  TouchableOpacity,
-  TextInput,
-  ScrollView,
-  Image,
-} from 'react-native';
+import {View, Text, ImageBackground, ScrollView} from 'react-native';
 import Headings from '../Components/Headings';
 import {DARK, PRIMARY, WHITE} from '../Constants/Colors';
 import {height, width} from '../Constants/Dimensions';

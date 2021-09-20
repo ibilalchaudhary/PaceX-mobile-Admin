@@ -1,12 +1,5 @@
 import React, {Component, useState} from 'react';
-import {
-  ScrollView,
-  Text,
-  View,
-  Image,
-  TouchableOpacity,
-  SafeAreaView,
-} from 'react-native';
+import {ScrollView, Text, View, Image, SafeAreaView} from 'react-native';
 import Svg, {G, Path} from 'react-native-svg';
 import Buttons from '../Components/Buttons';
 import Header from '../Components/Header';

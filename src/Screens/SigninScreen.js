@@ -4,7 +4,6 @@ import {
   Text,
   ImageBackground,
   TouchableOpacity,
-  TextInput,
   ScrollView,
 } from 'react-native';
 import Headings from '../Components/Headings';

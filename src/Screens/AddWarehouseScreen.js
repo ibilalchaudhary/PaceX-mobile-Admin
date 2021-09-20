@@ -1,21 +1,8 @@
 import React, {Component} from 'react';
-import {
-  View,
-  Text,
-  ImageBackground,
-  TouchableOpacity,
-  TextInput,
-  ScrollView,
-  Image,
-  Modal,
-} from 'react-native';
-import Headings from '../Components/Headings';
-import {DARK, DISABLE, PRIMARY, TEXT_COLOR, WHITE} from '../Constants/Colors';
+import {View, Text, ImageBackground, ScrollView} from 'react-native';
 import {height, width} from '../Constants/Dimensions';
 import Svg, {G, Path, Text as TextSvg} from 'react-native-svg';
 import Header from '../Components/Header';
-import CardDetails from '../Components/CardDetails';
-import RepresentativeCard from '../Components/RepresentativeCard';
 import Buttons from '../Components/Buttons';
 import InputBox from '../Components/InputBox';
 
@@ -637,12 +624,14 @@ export default class AddWarehouseScreen extends Component {
             />
           </View>
         </ScrollView>
-         <View style={{paddingHorizontal:18}}><Buttons
+        <View style={{paddingHorizontal: 18}}>
+          <Buttons
             placeholder="Next"
             onPress={() => {
               navigation.navigate('AddWarehouseMoreInfo');
             }}
-          /></View>
+          />
+        </View>
       </ImageBackground>
     );
   }

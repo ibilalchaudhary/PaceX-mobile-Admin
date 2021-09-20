@@ -1,22 +1,13 @@
 import React, {Component} from 'react';
 import {
   DISABLE,
-  INPUT_BG,
   PRIMARY,
   SECONDARY,
   TEXT_COLOR,
   WHITE,
 } from '../Constants/Colors';
-import {
-  View,
-  ScrollView,
-  Image,
-  Text,
-  TouchableOpacity,
-  AppRegistry,
-} from 'react-native';
+import {View, ScrollView, Image, Text, TouchableOpacity} from 'react-native';
 import Svg, {G, Path} from 'react-native-svg';
-import {height, width} from '../Constants/Dimensions';
 import Header from '../Components/Header';
 import WarehouseMainCard from '../Components/WarehouseMainCard';
 import ImageZoom from 'react-native-image-pan-zoom';

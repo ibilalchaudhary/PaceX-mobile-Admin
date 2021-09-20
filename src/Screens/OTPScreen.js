@@ -8,10 +8,8 @@ import {
   ScrollView,
   Image,
 } from 'react-native';
-import Headings from '../Components/Headings';
 import {DARK, INPUT_BG, PRIMARY, SECONDARY, WHITE} from '../Constants/Colors';
 import {height, width} from '../Constants/Dimensions';
-import Svg, {G, Path} from 'react-native-svg';
 import Buttons from '../Components/Buttons';
 import Logo from '../Components/Logo';
 import CodeInput from 'react-native-confirmation-code-input';

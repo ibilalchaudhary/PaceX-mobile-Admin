@@ -13,13 +13,9 @@ import {
   Image,
   Text,
   TouchableOpacity,
-  TextInput,
   ImageBackground,
 } from 'react-native';
-import Svg, {Path, G} from 'react-native-svg';
 import Header from '../Components/Header';
-import Buttons from '../Components/Buttons';
-import InputBox from '../Components/InputBox';
 import {height} from '../Constants/Dimensions';
 function RequestTextLines({heading, subHeading}) {
   return (
